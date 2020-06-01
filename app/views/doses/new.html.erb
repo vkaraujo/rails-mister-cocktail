@@ -1,5 +1,7 @@
-<%= simple_form_for [@ingredient, @dose] do |f| %>
-  <%= f.input :ingredient %>
-  <%= f.input :dose %>
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
+<div class="box">
+  <h1>Add Ingredients</h1>
+
+  <%= render 'form', cocktail: @cocktail, submit_msg: 'create'%>
+
+  <%= link_to 'Back', cocktails_path, class: 'btn btn-secondary' %>
+</div>

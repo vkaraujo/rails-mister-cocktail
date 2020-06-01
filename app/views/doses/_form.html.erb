@@ -1,0 +1,5 @@
+<%= simple_form_for [@ingredient, @dose] do |f| %>
+  <%= f.input :ingredient %>
+  <%= f.input :dose %>
+  <%= f.submit class: 'btn btn-secondary' %>
+<% end %>

@@ -1,5 +1,8 @@
-<h1>New Cocktail</h1>
+<div class="box">
+  <h1>New Cocktail</h1>
 
-<%= render 'form', cocktail: @cocktail, submit_msg: 'Create' %>
+  <%= render 'form', cocktail: @cocktail, submit_msg: 'create'%>
 
-<%= link_to 'Back', cocktails_path, class: 'btn btn-secondary' %>
+  <%= link_to 'Back', cocktails_path, class: 'btn btn-secondary' %>
+</div>
+
